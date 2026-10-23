@@ -1,0 +1,41 @@
+name: echoguard
+description: A local ML personal-safety audio monitor.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite_flutter: ^0.12.0
+  record: ^7.1.2
+  sqflite: ^2.4.5
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+  geolocator: ^10.1.0
+  url_launcher: ^6.2.1
+  permission_handler: ^11.0.1
+  provider: ^6.1.1
+  path: ^1.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/echoguard_app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#020A16"
+  adaptive_icon_foreground: "assets/images/echoguard_app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/echoguard_logo.png
+    - assets/images/echoguard_app_icon.png
